@@ -1,0 +1,23 @@
+:root{color-scheme:dark;--ink:#0b0808;--char:#141011;--panel:#1b1415;--panel-2:#221819;--line:#3b2b26;--line-hi:#5a4234;--blood:#a3141c;--blood-hi:#d42a2f;--blood-glow:rgba(212,42,47,.35);--gold:#c9a45c;--gold-hi:#ecd092;--gold-dim:#8d7240;--bone:#efe4d0;--text:#e2d6c2;--muted:#a8988a;--ok:#6fbf73;--warn:#e0a53a;--bad:#e2554a;--f-logo:"Metal Mania","Grenze Gotisch",Impact,serif;--f-display:"Grenze Gotisch",Georgia,serif;--f-body:"Alegreya Sans","Segoe UI",system-ui,sans-serif;--f-ui:"Barlow Condensed","Arial Narrow","Segoe UI",sans-serif;--r:6px}
+*{box-sizing:border-box}[hidden]{display:none!important}html{background:var(--ink)}
+body{margin:0;background:radial-gradient(1200px 520px at 50% -140px,rgba(163,20,28,.32),transparent 70%),var(--ink);color:var(--text);font:17px/1.55 var(--f-body);padding-inline:16px;min-height:100vh}
+.wrap{max-width:1080px;margin:0 auto;padding-block:12px 64px}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;color:var(--bone);margin:0}
+p{margin:0}a{color:var(--gold-hi)}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.eyebrow{font:600 13px/1 var(--f-ui);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.muted{color:var(--muted)}.num{font-variant-numeric:tabular-nums}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:8px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--bone)}
+.brand img{width:38px;height:38px}
+.brand b{font:400 21px/1 var(--f-logo)}
+.brand small{display:block;font:600 11px/1.2 var(--f-ui);letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dim)}
+.nav{display:flex;gap:4px;flex-wrap:wrap}
+.nav a{font:600 14px/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding:9px 12px;border-radius:var(--r)}
+.nav a[aria-current="page"]{color:var(--gold-hi);background:rgba(201,164,92,.08)}
+.mode-pill{font:600 12px/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;padding:6px 9px;border:1px solid var(--line-hi);border-radius:99px;color:var(--muted)}
+.mode-pill.demo{color:var(--warn);border-color:rgba(224,165,58,.5)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 20px;border-radius:var(--r);border:1px solid var(--line-hi);background:var(--panel-2);color:var(--bone);font:700 16px/1 var(--f-ui);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;text-decoration:none}
+.btn.primary{background:linear-gradient(180deg,var(--blood-hi),var(--blood));border-color:#e24c4f}
+.btn.ghost{background:transparent}.btn.small{min-height:36px;padding:0 12px;font-size:13px}
